@@ -1,0 +1,33 @@
+body {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+#gridContainer {
+	width: 600px;
+	height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cell {
+	width: 200px;
+	height: 200px;
+	outline: 1px solid grey;
+	cursor: pointer;
+	text-align: center;
+	line-height: 200px; /*galima panaudoti vienos linijos vertikaliam centravimui*/
+	font-size: 100px;
+	color: grey;
+}
+
+.cell.win {
+	background-color: rgb(128, 154, 240);
+}
+
+#winMessage {
+	color: rgb(128, 154, 240);
+	font-size: 50px;
+	display: none;
+	margin-left: 100PX;
+}
