@@ -4,6 +4,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
 #gridContainer {
 	width: 60vh;
 	height: 60vh;
@@ -29,7 +30,27 @@ body {
 
 #winMessage {
 	color: rgb(128, 154, 240);
-	font-size: 50px;
+	font-size: 10vh;
 	display: none;
 	padding-top: 10vh;
+}
+
+@media (orientation: portrait) {
+		#gridContainer {
+		width: 60vw;
+		height: 60vw;
+		padding-top: 10vw;
+	}
+
+	.cell {
+		width: 20vw;
+		height: 20vw;
+		line-height: 20vw;
+		font-size: 10vw;
+	}
+
+	#winMessage {
+		font-size: 10vw;
+		padding-top: 10vw;
+	}
 }
