@@ -2,22 +2,24 @@ body {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	flex-direction: column;
 }
 #gridContainer {
-	width: 600px;
-	height: 600px;
+	width: 60vh;
+	height: 60vh;
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 10vh;
 }
 
 .cell {
-	width: 200px;
-	height: 200px;
+	width: 20vh;
+	height: 20vh;
 	outline: 1px solid grey;
 	cursor: pointer;
 	text-align: center;
-	line-height: 200px; /*galima panaudoti vienos linijos vertikaliam centravimui*/
-	font-size: 100px;
+	line-height: 20vh; /*galima panaudoti vienos linijos vertikaliam centravimui*/
+	font-size: 10vh;
 	color: grey;
 }
 
@@ -29,5 +31,5 @@ body {
 	color: rgb(128, 154, 240);
 	font-size: 50px;
 	display: none;
-	margin-left: 100PX;
+	padding-top: 10vh;
 }
